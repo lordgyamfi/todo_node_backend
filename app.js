@@ -15,7 +15,7 @@ app.get('/todo/:todoId', todoController.getTodoById);
 
 app.listen(PORT, function(){
 console.log('Server has started to run');
-mongoose.connect(process.env.LOCAL_DB) 
+mongoose.connect(process.env.DB_URL) 
 .then(function(){
 console.log('DB is connected');
 })
