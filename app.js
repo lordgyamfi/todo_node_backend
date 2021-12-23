@@ -6,7 +6,9 @@ const todoController = require('./controllers/todo_controller.js');
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json()); 
-
+app.get('/', function(req, res){
+res.status(200).json({message:'Welcome to Lord Todo API'});
+});
 app.get('/todo', todoController.getAllTodo);
 app.post('/todo', todoController.addTodo);
 app.patch('/todo/:todoId', todoController.updateTodoById);
