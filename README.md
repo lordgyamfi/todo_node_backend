@@ -8,3 +8,6 @@ A Basic TODO API created in node.js and mongoDB
 4. Rename '.env.example' file to '.env' and replace variables(DB_URL and LOCAl_DB) 
 with your own mongo db connection Strings (DB_URL for Atlas URL  and LOCAL_DB for local mongo db).
 5.Run todo_node_backend type ''npm run Start'(node) or 'npm run dev'(nodemon)
+
+
+base Url = https://spotless-shift-newt.cyclic.app/
