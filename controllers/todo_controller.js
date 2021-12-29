@@ -3,7 +3,6 @@ const Todo = require ('../models/Todo');
  
 async function addTodo(req, res){
     try {
-
         const body = req.body;
         const title = body.title;
         const description = body.description;
